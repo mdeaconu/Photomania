@@ -16,7 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Photo : NSManagedObject
 
 // Insert code here to declare functionality of your managed object subclass
++ (Photo *)photoWithFlickrInfo:(NSDictionary *)photoDictionary
+        inManagedObjectContext:(NSManagedObjectContext *)context;
 
++ (void)loadPhotosFromFlickrArray:(NSArray *)photos
+         intoManagedObjectContext:(NSManagedObjectContext *)context;
 @end
 
 NS_ASSUME_NONNULL_END

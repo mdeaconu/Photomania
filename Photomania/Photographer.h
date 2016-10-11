@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Photographer : NSManagedObject
 
 // Insert code here to declare functionality of your managed object subclass
++ (Photographer *)photographerWithName:(NSString *)name
+               inManagedObjectsContext:(NSManagedObjectContext *)context;
 
 @end
 
