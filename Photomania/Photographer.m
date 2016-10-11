@@ -11,7 +11,6 @@
 
 @implementation Photographer
 
-// Insert code here to add functionality to your managed object subclass
 + (Photographer *)photographerWithName:(NSString *)name
                inManagedObjectsContext:(NSManagedObjectContext *)context
 {
